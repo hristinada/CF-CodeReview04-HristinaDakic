@@ -1,0 +1,36 @@
+var movies = [{
+	"pic": "img/shrek.jpg",
+	"name": "Shrek",
+	"description": "A mean lord exiles fairytale creatures to the swamp of a grumpy ogre, who must go on a quest and rescue a princess for the lord in order to get his land back.",
+	"year": "2001",
+},
+{
+	"pic": "img/iceage.jpg",
+	"name": "Ice Age",
+	"description": "Set during the Ice Age, a sabertooth tiger, a sloth, and a wooly mammoth find a lost human infant, and they try to return him to his tribe.",
+	"year": "2002",
+},
+{
+	"pic": "img/madagascar.jpg",
+	"name": "Madagascar",
+	"description": "A group of animals who have spent all their life in a New York zoo end up in the jungles of Madagascar, and must adjust to living in the wild.",
+	"year":"2005",
+},
+{
+	"pic": "img/ratatouille.jpg",
+	"name": "Ratatouille",
+	"description": "A rat who can cook makes an unusual alliance with a young kitchen worker at a famous restaurant.",
+	"year":"2007",
+},
+{
+	"pic": "img/findingnemo.jpg",
+	"name": "Finding Nemo",
+	"description": "After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home.",
+	"year":"2003",
+},
+{
+	"pic": "img/monsters.jpg",
+	"name": "Monsters, Inc.",
+	"description": "In order to power the city, monsters have to scare children so that they scream.",
+	"year":"2001",
+}]

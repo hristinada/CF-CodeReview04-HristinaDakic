@@ -1,0 +1,122 @@
+$almostBlack: #101010
+$theGreen: #2FA33A
+$kindaBlue: #171D24
+$kindaWhite: #CECECE
+$mainFont: 'Roboto', sans-serif
+
+body
+	font-family: $mainFont
+
+// STYLE HEADER, FOOTER AND NAVIGATION
+header
+	background-color: $almostBlack
+	height: 5%
+	text-align: center
+	padding: 3%
+h1
+	color: $kindaWhite
+	font-size: 4.5vw
+	margin: 0
+
+footer
+	@extend header
+	h1
+		font-size: 3vw
+
+nav
+	background-color: #434343
+	padding: 2%
+	a
+		text-decoration: none
+		font-size: 2.5vw
+		color: $kindaWhite
+		font-weight: bolder
+
+//STYLE THE MAIN SECTION
+
+main
+	background-color: $kindaBlue
+	
+	#underNav
+		text-align: center
+		padding: 2%
+		display: flex
+		justify-content: center
+		flex-direction: column
+		h1
+			font-size: 3.5vw
+		
+		#sortBtn
+			align-self: flex-end
+			font-size: 2.5vw
+			background-color: $kindaBlue
+			color: $kindaWhite
+			border: none
+			outline: none
+		
+		#sortBtn:hover
+			color: $theGreen	
+
+	#movies
+		display: flex
+		flex-flow: row wrap
+		justify-content: space-around
+	
+	
+	.smallBox
+		position: relative
+		display: flex
+		flex-flow: row wrap
+		background-color: $almostBlack
+		color: $kindaWhite
+		width: 46%
+		margin: 1% 0
+		padding: 1%
+		img
+			width: 100%
+		div
+			width: 48%
+			margin: 1%
+		h2
+			color: $kindaWhite
+			margin: 0
+			font-size: 3vw
+			font-weight: 600
+		p
+			font-size: 1.5vw
+	
+		.likes
+			//border: solid white
+			display: flex
+			flex-direction: row
+			justify-content: flex-end
+			position: absolute
+			height: 18%
+			bottom: 0
+	
+			.output
+				border-radius: 50%
+				font-size: 3vw
+				line-height: 6vw
+				height: 6vw
+				width: 6vw
+				text-align: center
+				color: $kindaWhite
+				background-color: $theGreen
+
+
+			.btn
+				font-size: 2.5vw
+				margin-right: 3%
+				color: $theGreen
+				background-color: $almostBlack
+				border: none
+				outline: none
+			
+			.btn:hover
+				color: $kindaWhite
+
+
+
+
+

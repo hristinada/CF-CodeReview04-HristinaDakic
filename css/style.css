@@ -1,0 +1,97 @@
+body {
+  font-family: "Roboto", sans-serif; }
+
+header, footer {
+  background-color: #101010;
+  height: 5%;
+  text-align: center;
+  padding: 3%; }
+
+h1 {
+  color: #CECECE;
+  font-size: 4.5vw;
+  margin: 0; }
+
+footer h1 {
+  font-size: 3vw; }
+
+nav {
+  background-color: #434343;
+  padding: 2%; }
+  nav a {
+    text-decoration: none;
+    font-size: 2.5vw;
+    color: #CECECE;
+    font-weight: bolder; }
+
+main {
+  background-color: #171D24; }
+  main #underNav {
+    text-align: center;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; }
+    main #underNav h1 {
+      font-size: 3.5vw; }
+    main #underNav #sortBtn {
+      align-self: flex-end;
+      font-size: 2.5vw;
+      background-color: #171D24;
+      color: #CECECE;
+      border: none;
+      outline: none; }
+    main #underNav #sortBtn:hover {
+      color: #2FA33A; }
+  main #movies {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; }
+  main .smallBox {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #101010;
+    color: #CECECE;
+    width: 46%;
+    margin: 1% 0;
+    padding: 1%; }
+    main .smallBox img {
+      width: 100%; }
+    main .smallBox div {
+      width: 48%;
+      margin: 1%; }
+    main .smallBox h2 {
+      color: #CECECE;
+      margin: 0;
+      font-size: 3vw;
+      font-weight: 600; }
+    main .smallBox p {
+      font-size: 1.5vw; }
+    main .smallBox .likes {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      position: absolute;
+      height: 18%;
+      bottom: 0; }
+      main .smallBox .likes .output {
+        border-radius: 50%;
+        font-size: 3vw;
+        line-height: 6vw;
+        height: 6vw;
+        width: 6vw;
+        text-align: center;
+        color: #CECECE;
+        background-color: #2FA33A; }
+      main .smallBox .likes .btn {
+        font-size: 2.5vw;
+        margin-right: 3%;
+        color: #2FA33A;
+        background-color: #101010;
+        border: none;
+        outline: none; }
+      main .smallBox .likes .btn:hover {
+        color: #CECECE; }
+
+/*# sourceMappingURL=style.css.map */
