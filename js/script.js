@@ -18,9 +18,14 @@ for(var i=0;i<btn.length;i++){
     }
 
 //creating a function that increments the likes
-function incrementLikes(j){
-	output[j].value++;
-   }
+function incrementLikes(buttonID){
+	for(var i=0; i<output.length-1; i++) {
+		if (output[i].getAttribute("id") == buttonID) {
+			output[i].value++;
+			break;
+		}
+	}
+} 
 
 //creating a function to sort items on a click
 
@@ -43,6 +48,22 @@ function sortItems() {
 		}
 	}
 }
+
+//alternative solution
+
+// function sortItems() {
+// 	var switching_happened = true;
+// 	while (switching_happened == true) { //Make a loop that will continue until no switching has happened
+// 		switching_happened = false; //start by saying: no switching has happened
+// 		for (var i = 0; i < (smallBox.length - 1); i++) {
+// 			if (Number(output[i].innerHTML) < Number(output[i + 1].innerHTML)) {
+// 				smallBox[i].parentNode.insertBefore(smallBox[i + 1], smallBox[i]);
+// 				switching_happened = true; // restart while loop *switching happened*
+// 				break; //exit for loop
+// 			}
+// 		}
+// 	}
+// }
 
 //creating an event listener for sorting
 sort.addEventListener("click", sortItems, false);
